@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICCTutor Link - Login</title>
+  <link rel="icon" type="image/x-icon" href="img/icct-colleges-rizal-philippines.webp">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <!-- Left Panel -->
+    <div class="login-panel">
+      <div class="container">
+        <div class="item-1">
+          <h2 class="h2">Welcome Back!</h2>
+        </div>
+        <div class="item-2">
+          <img class="login-image" src="img/icct-colleges-rizal-philippines.webp" alt="ICCT Colleges">
+        </div>
+      </div>
+
+      <p class="form-text">Sign in to continue</p>
+
+      <!-- Role Switch -->
+      <div class="role-switch">
+        <button type="button" class="role-btn active" data-role="student">Student</button>
+        <button type="button" class="role-btn" data-role="admin">Admin</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+        </div>
+
+        <button type="submit" class="login-btn">Sign In</button>
+      </form>
+
+      <p id="message"></p>
+    </div>
+
+    <!-- admin login = Email: admin@icct.com Password: admin123 -->
+
+    <!-- Right Panel -->
+    <div class="signup-panel">
+      <h2>Hello, Student!</h2>
+      <p>Create your student account to use all site features</p>
+      <button type="button" class="signup-btn" id="openSignupBtn">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div class="modal" id="signupModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeSignupBtn">&times;</span>
+      <h2>Create Student Account</h2>
+      <form id="signupForm">
+        <div class="input-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" required>
+        </div>
+
+        <div class="input-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" required>
+        </div>
+
+        <div class="input-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" required>
+        </div>
+
+        <div class="input-group">
+          <label for="signupConfirmPassword">Confirm Password</label>
+          <input type="password" id="signupConfirmPassword" required>
+        </div>
+
+        <button type="submit" class="login-btn">Create Account</button>
+      </form>
+
+      <p id="signupMessage"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

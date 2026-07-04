@@ -1,0 +1,240 @@
+/* General Layout */
+@import url('[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap)');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #00074A;
+background: -moz-linear-gradient(left, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+background: -webkit-linear-gradient(left, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+background: linear-gradient(to right, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.login-container {
+  display: flex;
+  width: 800px;
+  max-width: 95%;
+  min-height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Left Panel */
+.login-panel {
+  flex: 1;
+  background: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-panel h2 {
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.h2 {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.form-text {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.login-image {
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.role-switch {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+
+.role-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ddd;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.role-btn.active {
+  background: #00074A;
+background: -moz-linear-gradient(left, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+background: -webkit-linear-gradient(left, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+background: linear-gradient(to right, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+  color: white;
+}
+
+.role-btn:hover {
+  background: #bbb;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #00074A;
+  box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.15);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+ background: #00074A;
+background: -moz-linear-gradient(left, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+background: -webkit-linear-gradient(left, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+background: linear-gradient(to right, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+/* Right Panel */
+.signup-panel {
+  flex: 1;
+  background: #00074A;
+background: -moz-linear-gradient(left, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+background: -webkit-linear-gradient(left, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+background: linear-gradient(to right, #00074A 0%, #2CABFF 100%, #2BAAFF 100%);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.signup-btn {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #00074A;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#message,
+#signupMessage {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.success {
+  color: #16a34a;
+}
+
+.error {
+  color: #dc2626;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  width: 420px;
+  max-width: 92%;
+  padding: 30px;
+  border-radius: 18px;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color:black;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .login-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .signup-panel {
+    min-height: 220px;
+  }
+}

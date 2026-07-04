@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICCT Antipolo Campus - Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
+  <link rel="icon" type="image/x-icon" href="img/icct-colleges-rizal-philippines.webp">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-graduation-cap"></i>
+        <span>ICCT Antipolo Campus</span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#courses" class="nav-link">Course Offering</a></li>
+        <li><a href="#news" class="nav-link">Campus News</a></li>
+        <li><a href="#map" class="nav-link">School Map</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#register" class="nav-link btn-register">Join Us Now</a></li>
+        <li><a href="#" id="logoutBtn" class="nav-link">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero-slider" id="home">
+    <div class="slides">
+      <div class="slide active" style="background-image: url('img/icct-collage.jpg');">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <span class="hero-badge">Welcome to ICCT Antipolo Campus</span>
+            <h1>Experience quality education in a modern learning environment</h1>
+            <p>Your gateway to campus life, academic excellence, and future opportunities.</p>
+            <div class="hero-actions">
+              <a href="#about" class="hero-btn">Explore Campus</a>
+              <a href="#register" class="hero-btn secondary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url('img/front2.jpg');">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <span class="hero-badge">Discover ICCT</span>
+            <h1>Learn, grow, and build your future with confidence</h1>
+            <p>Explore our programs, facilities, student life, and exciting campus opportunities.</p>
+            <div class="hero-actions">
+              <a href="#courses" class="hero-btn">View Courses</a>
+              <a href="#news" class="hero-btn secondary">Latest News</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url('img/gym2.jpg');">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <span class="hero-badge">Start Your Journey</span>
+            <h1>Take the next step toward your academic and career success</h1>
+            <p>Find the right course, connect with the campus, and begin your enrollment journey today.</p>
+            <div class="hero-actions">
+              <a href="#register" class="hero-btn">Register Now</a>
+              <a href="#contact" class="hero-btn secondary">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="slider-btn prev" id="prevSlide">&#10094;</button>
+    <button class="slider-btn next" id="nextSlide">&#10095;</button>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <section class="quick-dashboard">
+    <div class="dashboard-card">
+      <h3>Campus Tour</h3>
+      <p>Explore the facilities, classrooms, student spaces, and campus environment of ICCT Antipolo.</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Programs Offered</h3>
+      <p>Browse available college programs, senior high school strands, and learning opportunities.</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Latest Campus News</h3>
+      <p>Stay updated with important announcements, school activities, and recent developments.</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Enrollment</h3>
+      <p>Register online and begin your enrollment process quickly and conveniently.</p>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-heading">
+        <h2>About ICCT Antipolo Campus</h2>
+        <p>Building student success through accessible, quality, and future-ready education.</p>
+      </div>
+
+      <div class="vid-container">
+        <video width="854" height="480" autoplay controls muted loop>
+          <source src="img/icct-vid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Who We Are</h3>
+          <hr>
+          <p>
+            ICCT Antipolo Campus provides affordable and quality education for students who want
+            to achieve academic excellence and career readiness. The campus supports a vibrant
+            learning community with modern facilities and student-centered programs.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Mission</h3>
+          <hr>
+          <p>
+            To prepare students for the manifold demands of technological efficiency in Information
+            and Communication Technology, Health Sciences, and various disciplines through research,
+            advanced studies, and international linkages, while nurturing love for work and strong values.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Vision</h3>
+          <hr>
+          <p>
+            To become the leading premier provider of higher education in Asia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" id="courses">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Course Offering</h2>
+        <p>Explore programs that prepare students for real careers and lifelong learning.</p>
+      </div>
+
+      <div class="courses-grid">
+        <div class="course-card featured">
+          <div class="course-card-content">
+            <h3>College Programs</h3>
+            <hr>
+            <ul class="course-list">
+              <li>College of Teacher Education (CoTEd)</li>
+              <li>College of Art & Sciences</li>
+              <li>College of Business & Accountancy (CBA)</li>
+              <li>International School of Hospitality & Tourism</li>
+              <li>Management (ISHTM)</li>
+              <li>Technical & Vocational Department (TVD)</li>
+              <li>College of Computer Studies (CCS)</li>
+              <li>College of Engineering & Digital Technology (CoEDT)</li>
+              <li>College of Criminology & Administration</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card-content">
+            <h3>Senior High School</h3>
+            <hr>
+            <ul class="course-list">
+              <li>STEM (Science, Technology, Engineering & Mathematics)</li>
+              <li>ABM (Accountancy, Business & Management)</li>
+              <li>HUMSS (Humanities & Social Sciences)</li>
+              <li>GAS (General Academic Strand)</li>
+              <li>ICT (Information & Communication Technology / Computer Technology)</li>
+              <li>HE (Home Economics / Hotel & Restaurant Services)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card-content">
+            <h3>Short Courses</h3>
+            <hr>
+            <ul>
+              <li>Caregiving</li>
+              <li>Bookkeeping</li>
+              <li>Barista</li>
+              <li>Associate in Computer Technology (ACT)</li>
+              <li>Business Administration (ABA)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section" id="news">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Campus News</h2>
+      <p>Keep up with events, opportunities, and campus updates.</p>
+    </div>
+
+    <div class="grid-3" id="newsGrid">
+      <div class="news-card" data-id="1">
+        <span class="news-tag">Admissions</span>
+        <h3>Enrollment Now Open</h3>
+        <p>Applications are now being accepted for incoming students this semester.</p>
+        <img src="img/icct-courses.jpg" alt="enrollment" width="400" height="500">
+        <!-- Editable fields for admin -->
+        <div class="edit-controls" style="display:none;">
+          <input type="text" class="edit-title" placeholder="Edit Title">
+          <textarea class="edit-content" placeholder="Edit Content"></textarea>
+          <input type="file" class="edit-image" accept="image/*">
+          <button class="save-btn">Save Changes</button>
+        </div>
+      </div>
+
+      <div class="news-card" data-id="2">
+        <span class="news-tag">Events</span>
+        <h3>CCS Week</h3>
+        <p>CCS Week for College of Computer Studies.</p>
+        <img src="img/ccs-day.png" alt="CCS Week 2026" width="400" height="500">
+        <div class="edit-controls" style="display:none;">
+          <input type="text" class="edit-title" placeholder="Edit Title">
+          <textarea class="edit-content" placeholder="Edit Content"></textarea>
+          <input type="file" class="edit-image" accept="image/*">
+          <button class="save-btn">Save Changes</button>
+        </div>
+      </div>
+
+      <div class="news-card" data-id="3">
+        <span class="news-tag">Awards</span>
+        <h3>CCS Day Defending Champs: Antipolo!</h3>
+        <p>Antipolo took home the title of Overall Champion once again for CCS Day!</p>
+        <img src="img/champs.png" alt="CCS Week 2026" width="400" height="500">
+        <div class="edit-controls" style="display:none;">
+          <input type="text" class="edit-title" placeholder="Edit Title">
+          <textarea class="edit-content" placeholder="Edit Content"></textarea>
+          <input type="file" class="edit-image" accept="image/*">
+          <button class="save-btn">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section alt-section" id="map">
+    <div class="container">
+      <div class="section-heading">
+        <h2>School Map</h2>
+        <p>Find ICCT Antipolo Campus easily and plan your visit.</p>
+      </div>
+
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.280210641167!2d121.16907190400428!3d14.583198594840818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b8aaa2a67be9%3A0xfc1aa4217b71bb46!2sICCT%20-%20Antipolo%20Campus!5e1!3m2!1sen!2sph!4v1782389026896!5m2!1sen!2sph" width="1200" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Contact</h2>
+        <p>Reach out to us for inquiries, admissions, and campus information.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="info-box">
+          <i class="fas fa-envelope contact-icon"></i>
+          <h3>Email 📧</h3>
+          <hr>
+          <p>antipolo@icct.edu.ph</p>
+        </div>
+
+        <div class="info-box">
+          <i class="fas fa-phone contact-icon"></i>
+          <h3>Telephone ☎️</h3>
+          <hr>
+          <p>(02) 8630-4228 or (02) 7570-3280</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" id="register">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Join Us Now</h2>
+        <p>Submit your interest and start your ICCT journey today.</p>
+      </div>
+
+      <form class="register-form" id="registerForm">
+  <input type="text" placeholder="Full Name" required>
+  <input type="email" placeholder="Email Address" required>
+  <input type="number" placeholder="Contact" required>
+  <input type="text" placeholder="Address" required>
+
+  <label for="gender"></label>
+  <select id="gender" name="gender" required>
+    <option value="" disabled selected>Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label for="course"></label>
+  <select id="course" name="course" required>
+    <option value="" disabled selected>Select Course</option>
+    <option value="bsit">BSIT</option>
+    <option value="bscs">BSCS</option>
+    <option value="bsis">BSIS</option>
+    <option value="bsece">BSECE</option>
+  </select>
+
+  <button class="submit-btn" type="submit">Submit</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 ICCT Antipolo Campus. All rights reserved.</p>
+  </footer>
+
+  <script src="dashboard.js">
+    // Attach event listener to form
+  document.getElementById("registerForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent actual form submission
+    alert("Thank you for registering, proceed to school campus for the next step of your enrollment.");
+  });
+  </script>
+</body>
+</html>
