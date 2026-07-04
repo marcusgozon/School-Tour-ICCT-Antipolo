@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ICCT Antipolo Campus - Dashboard</title>
-  <link rel="stylesheet" href="dashboard.css">
-  <link rel="stylesheet" href="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="img/icct-colleges-rizal-philippines.webp">
 </head>
 <body>
@@ -45,6 +45,11 @@
               <a href="#about" class="hero-btn">Explore Campus</a>
               <a href="#register" class="hero-btn secondary">Enroll Now</a>
             </div>
+            <div class="hero-stats">
+              <span><i class="fas fa-graduation-cap"></i> Modern learning</span>
+              <span><i class="fas fa-award"></i> Industry-ready programs</span>
+              <span><i class="fas fa-users"></i> Student-centered campus</span>
+            </div>
           </div>
         </div>
       </div>
@@ -58,6 +63,11 @@
             <div class="hero-actions">
               <a href="#courses" class="hero-btn">View Courses</a>
               <a href="#news" class="hero-btn secondary">Latest News</a>
+            </div>
+            <div class="hero-stats">
+              <span><i class="fas fa-graduation-cap"></i> Modern learning</span>
+              <span><i class="fas fa-award"></i> Industry-ready programs</span>
+              <span><i class="fas fa-users"></i> Student-centered campus</span>
             </div>
           </div>
         </div>
@@ -73,6 +83,11 @@
               <a href="#register" class="hero-btn">Register Now</a>
               <a href="#contact" class="hero-btn secondary">Contact Us</a>
             </div>
+            <div class="hero-stats">
+              <span><i class="fas fa-graduation-cap"></i> Modern learning</span>
+              <span><i class="fas fa-award"></i> Industry-ready programs</span>
+              <span><i class="fas fa-users"></i> Student-centered campus</span>
+            </div>
           </div>
         </div>
       </div>
@@ -85,21 +100,25 @@
 
   <section class="quick-dashboard">
     <div class="dashboard-card">
+      <div class="icon-wrap"><i class="fas fa-map-location-dot"></i></div>
       <h3>Campus Tour</h3>
       <p>Explore the facilities, classrooms, student spaces, and campus environment of ICCT Antipolo.</p>
     </div>
 
     <div class="dashboard-card">
+      <div class="icon-wrap"><i class="fas fa-book-open"></i></div>
       <h3>Programs Offered</h3>
       <p>Browse available college programs, senior high school strands, and learning opportunities.</p>
     </div>
 
     <div class="dashboard-card">
+      <div class="icon-wrap"><i class="fas fa-newspaper"></i></div>
       <h3>Latest Campus News</h3>
       <p>Stay updated with important announcements, school activities, and recent developments.</p>
     </div>
 
     <div class="dashboard-card">
+      <div class="icon-wrap"><i class="fas fa-user-graduate"></i></div>
       <h3>Enrollment</h3>
       <p>Register online and begin your enrollment process quickly and conveniently.</p>
     </div>
@@ -336,12 +355,6 @@
     <p>&copy; 2026 ICCT Antipolo Campus. All rights reserved.</p>
   </footer>
 
-  <script src="dashboard.js">
-    // Attach event listener to form
-  document.getElementById("registerForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent actual form submission
-    alert("Thank you for registering, proceed to school campus for the next step of your enrollment.");
-  });
-  </script>
+  <script src="dashboard.js"></script>
 </body>
 </html>

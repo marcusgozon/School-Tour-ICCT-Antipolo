@@ -160,7 +160,7 @@ loginForm.addEventListener("submit", (e) => {
       message.className = "success";
 
       setTimeout(() => {
-        window.location.href = "dashboard.html";
+        window.location.href = "index.html";
       }, 1000);
     } else {
       message.textContent = "Invalid admin email or password.";
@@ -188,7 +188,7 @@ loginForm.addEventListener("submit", (e) => {
     message.className = "success";
 
     setTimeout(() => {
-      window.location.href = "dashboard.html";
+      window.location.href = "index.html";
     }, 1000);
   } else {
     message.textContent = "Invalid student email or password.";
